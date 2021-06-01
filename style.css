@@ -115,8 +115,9 @@ main{
 }
 
 .image{
-    height: 90vh;;
+    height: 90vh;
     flex:1 1 600px;
+    display: block;
 }
 
 .elena-img{
@@ -127,6 +128,65 @@ main{
 
 /* MAIN SECTION END */
 
+/* ABOUT SECTION -STARTED */
+
+.aboutSection{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(153, 8, 179);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.minimal{
+    height: 100vh;
+    flex:0 1 600px;
+    background-color: red;
+    position: relative;
+}
+
+.minimal h1{
+    font-size: var(--header2);
+    letter-spacing: 1.5rem;
+    color: white;
+    position: absolute;
+    padding-top: 4rem;
+    padding-left: 6rem;
+}
+
+.chloe-img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.chloe-gill{
+    height: 100vh;
+    flex:5 1 600px;
+    background-color: #3A602D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:3rem;
+    color: white;
+}
+
+.chloe-gill h1{
+    font-size: var(--header2);
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+}
+
+.chloe-gill h3{
+    font-size: var(--header5);
+    padding: 1rem 0;
+}
+
+.chloe-gill p{
+    letter-spacing: .1rem;
+}
+/* ABOUT SECTION -ENDED */
+
 /* KEYFRAMES - SECTION ONE - START */
 
 
@@ -136,7 +196,27 @@ main{
 
 /* MEDIA QUERIES SECTION ONE-START */
 
-
+@media only screen and (max-width:600px){
+    .image{
+        height:100vh;
+        position: relative;
+    }
+    .elena-img{
+        height: 90%;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        bottom:0;
+    }
+    .minimal h1{
+        font-size: var(--header2);
+        letter-spacing: 0.8rem;
+        color: white;
+        position: absolute;
+        padding-top: 4rem;
+        padding-left: 0.8rem;
+    }
+}
 
 /* MEDIA QUERIES SECTION ONE-END */
 
