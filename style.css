@@ -61,6 +61,7 @@ nav{
     flex:1;
     width: 70%;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .nav-links{
@@ -69,6 +70,10 @@ nav{
     font-size: var(--common);
     font-weight: 600;
     display: flex;justify-content: space-around;
+}
+
+.nav-links li{
+    cursor: pointer;
 }
 
 /* HEADER SECTION - END */
@@ -112,6 +117,7 @@ main{
     border: 2px solid black;
     padding:0.5rem 1rem;
     margin-top: 3rem;
+    cursor: pointer;
 }
 
 .image{
@@ -133,7 +139,6 @@ main{
 .aboutSection{
     height: 100vh;
     width: 100%;
-    background-color: rgb(153, 8, 179);
     display: flex;
     flex-wrap: wrap;
 }
@@ -150,7 +155,7 @@ main{
     letter-spacing: 1.5rem;
     color: white;
     position: absolute;
-    padding-top: 4rem;
+    padding-top: 3rem;
     padding-left: 6rem;
 }
 
@@ -186,6 +191,49 @@ main{
     letter-spacing: .1rem;
 }
 /* ABOUT SECTION -ENDED */
+
+/* WORK SECTION - STARTED */
+
+.worksection{
+    max-height: 100vh;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50% 50%;
+    /* grid-template-areas: "pic1 pic1 pic2"
+                         "pic3 pic3 pic2"; */
+}
+
+.pic1{
+    grid-column: 1 / 3;
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.pic2{
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    max-height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pic3{
+    grid-column: 1/2;
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.pic4{
+    grid-column: 2/3;
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* WORK SECTION - ENDED */
 
 /* KEYFRAMES - SECTION ONE - START */
 
