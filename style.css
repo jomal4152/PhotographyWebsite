@@ -34,7 +34,7 @@ body{
 /* SECTION ONE - START */
 
 .section-one{
-    height:100vh;
+    min-height:100vh;
     width: 100%;
 }
 
@@ -81,7 +81,7 @@ nav{
 /* MAIN SECTION START */
 
 main{
-    height: 90vh;
+    min-height: 90vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -123,13 +123,13 @@ main{
 .image{
     height: 90vh;
     flex:1 1 600px;
-    display: block;
 }
 
 .elena-img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    pointer-events: none;
 }
 
 /* MAIN SECTION END */
@@ -137,7 +137,7 @@ main{
 /* ABOUT SECTION -STARTED */
 
 .aboutSection{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -145,8 +145,7 @@ main{
 
 .minimal{
     height: 100vh;
-    flex:0 1 600px;
-    background-color: red;
+    flex:1 1 600px;
     position: relative;
 }
 
@@ -160,9 +159,11 @@ main{
 }
 
 .chloe-img{
+    margin: auto;
     height: 100%;
     width:100%;
     object-fit: cover;
+    pointer-events: none;
 }
 
 .chloe-gill{
@@ -195,7 +196,7 @@ main{
 /* WORK SECTION - STARTED */
 
 .worksection{
-    max-height: 100vh;
+    min-height: 100vh;
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -209,6 +210,7 @@ main{
     width: 100%;
     max-height: 100%;
     object-fit: cover;
+    pointer-events: none;
 }
 
 .pic2{
@@ -217,6 +219,7 @@ main{
     max-height:100%;
     width: 100%;
     object-fit: cover;
+    pointer-events: none;
 }
 
 .pic3{
@@ -224,13 +227,16 @@ main{
     width: 100%;
     max-height: 100%;
     object-fit: cover;
+    pointer-events: none;
 }
 
 .pic4{
     grid-column: 2/3;
     max-height: 100%;
     width: 100%;
+    background-position: top;
     object-fit: cover;
+    pointer-events: none;
 }
 
 /* WORK SECTION - ENDED */
@@ -244,13 +250,13 @@ main{
 
 /* MEDIA QUERIES SECTION ONE-START */
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:960px){
     .image{
         height:100vh;
         position: relative;
     }
     .elena-img{
-        height: 90%;
+        height: 100%;
         width: 100%;
         object-fit: cover;
         position: absolute;
@@ -263,6 +269,43 @@ main{
         position: absolute;
         padding-top: 4rem;
         padding-left: 0.8rem;
+    }
+    .chloe-gill h1{
+        font-size: var(--header4);
+    }
+    .chloe-gill h3{
+        font-size: larger;
+    }
+    .chloe-gill p{
+        font-size: smaller;
+    }
+}
+
+
+@media only screen and (min-width:1600px){
+   
+    .minimal{
+        height: 100vh;
+        flex:3 1 600px;
+        position: relative;
+    }
+
+    .minimal h1{
+        font-size: 10rem;
+        letter-spacing: 0.8rem;
+        color: white;
+        position: absolute;
+        padding-top: 10rem;
+        padding-left: 15rem;
+    }
+    .chloe-gill h1{
+        font-size: var(--header1);
+    }
+    .chloe-gill h3{
+        font-size: var(--header3);
+    }
+    .chloe-gill p{
+        font-size: var(--header6);
     }
 }
 
