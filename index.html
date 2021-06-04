@@ -30,11 +30,10 @@
         <header>
           <nav>
             <h1 class="logo">Elena Joy</h1>
-            <input type="checkbox" class="checkbox" />
             <ul class="nav-links">
-              <li>About</li>
-              <li>Work</li>
-              <li>Contacts</li>
+              <li><a class="a" href="#about">About</a></li>
+              <li><a class="a" href="#work">Gallery</a></li>
+              <li><a class="a" href="#contact">Contacts</a></li>
             </ul>
             <div class="burger">
               <div class="span span1"></div>
@@ -53,14 +52,14 @@
               ipsam o accusantium ex quos exercitationem assumenda ad rerum
               excepturi, fugiat ut odio delectus.
             </p>
-            <a class="gallery-link" href="">Gallery</a>
+            <a class="gallery-link" href="#work">Gallery</a>
           </div>
           <div class="image">
             <img class="elena-img" src="./img/elena-joy.png" alt="" />
           </div>
         </main>
       </div>
-      <div class="aboutSection">
+      <div class="aboutSection" id="about">
         <div class="minimal">
           <div class="minimalh1">
             <h1>MINIMAL</h1>
@@ -94,13 +93,21 @@
           </div>
         </div>
       </div>
-      <div class="worksection">
-        <img src="./img/gallery-1.jpg" alt="" class="pic1 pic" />
-        <img src="./img/gallery-2.jpg" alt="" class="pic2 pic" />
-        <img src="./img/gallery-3.jpg" alt="" class="pic3 pic" />
-        <img src="./img/gallery-4.jpg" alt="" class="pic4 pic" />
+      <div class="worksection" id="work">
+        <div class="image pic1">
+          <img src="./img/gallery-1.jpg" alt="" class=" " />
+        </div>
+        <div class="image pic2">
+          <img src="./img/gallery-2.jpg" alt="" class=" " />
+        </div>
+        <div class="image pic3">
+          <img src="./img/gallery-3.jpg" alt="" class=" " />
+        </div>
+        <div class="image pic4">
+          <img src="./img/gallery-4.jpg" alt="" class=" " />
+        </div>
       </div>
-      <div class="contactsection">
+      <div class="contactsection" id="contact">
         <div class="cs-container">
           <div class="emailcs">
             <h2>Get in</h2>
@@ -110,7 +117,9 @@
             <button class="cs-button">Submit</button>
           </div>
           <div class="imagecs">
-            <img src="./img/contact-image.jpg" alt="" />
+            <div class="img">
+              <img src="./img/contact-image.jpg" alt="" />
+            </div>
           </div>
         </div>
         <footer>
@@ -123,5 +132,6 @@
         </footer>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
